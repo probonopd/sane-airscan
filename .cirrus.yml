@@ -9,7 +9,7 @@ task:
   name: freebsd-12-1-release-amd64
   stateful: false
   setup_script:
-    - pkg install -y curl wget gmake zip avahi libxml2 libjpeg-turbo gnutls sane-backends
+    - pkg install -y curl wget gmake zip pkgconf avahi libxml2 libjpeg-turbo gnutls sane-backends
   test_script:
     - ln -s /usr/local/bin/pkg-config /usr/bin/pkg-config # TODO: Remove the need for this
     - gmake

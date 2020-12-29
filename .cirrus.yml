@@ -11,6 +11,7 @@ task:
   setup_script:
     - pkg install -y curl wget gmake zip avahi libxml2 libjpeg-turbo gnutls sane-backends
   test_script:
+    - ln -s /usr/local/bin/pkg-config /usr/bin/pkg-config # TODO: Remove the need for this
     - gmake
     # case "$CIRRUS_BRANCH" in *pull/*) echo skipping since PR ;; * ) wget https://github.com/tcnksm/ghr/files/5247714/ghr.zip ; unzip ghr.zip ; rm ghr.zip ; ./ghr -replace -t "${GITHUB_TOKEN}" -u "${CIRRUS_REPO_OWNER}" -r "${CIRRUS_REPO_NAME}" -c "${CIRRUS_CHANGE_IN_REPO}" continuous "${CIRRUS_WORKING_DIR}"/build/*zip ; esac
   only_if: $CIRRUS_TAG != 'continuous'

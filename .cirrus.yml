@@ -9,7 +9,7 @@ task:
   name: freebsd-12-1-release-amd64
   stateful: false
   setup_script:
-    - pkg install -y curl wget zip avahi libxml2 libjpeg-turbo gnutls sane-backends
+    - pkg install -y curl wget gmake zip avahi libxml2 libjpeg-turbo gnutls sane-backends
   test_script:
     - gmake
     # case "$CIRRUS_BRANCH" in *pull/*) echo skipping since PR ;; * ) wget https://github.com/tcnksm/ghr/files/5247714/ghr.zip ; unzip ghr.zip ; rm ghr.zip ; ./ghr -replace -t "${GITHUB_TOKEN}" -u "${CIRRUS_REPO_OWNER}" -r "${CIRRUS_REPO_NAME}" -c "${CIRRUS_CHANGE_IN_REPO}" continuous "${CIRRUS_WORKING_DIR}"/build/*zip ; esac

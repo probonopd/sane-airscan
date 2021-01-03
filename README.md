@@ -75,6 +75,7 @@ Legend:
 | Canon i-SENSYS MF4780w             | No                        | Yes<sup>[3](#note3)</sup> |
 | Canon i-SENSYS MF641C              | No                        | Yes                       |
 | Canon Lide 400                     | Yes<sup>[2](#note2)</sup> |                           |
+| Canon MB5100 series                | Yes                       |                           |
 | Canon MB5400 series                | Yes                       | Yes                       |
 | Canon MF240 Series                 | No                        | Yes<sup>[3](#note3)</sup> |
 | Canon MF260 Series                 | Yes                       | Yes<sup>[3](#note3)</sup> |
@@ -118,6 +119,7 @@ Legend:
 | HP ENVY Photo 6200 series          | Yes                       |                           |
 | HP ENVY Photo 7800 series          | Yes                       |                           |
 | HP ENVY Pro 6400 series            | Yes                       |                           |
+| HP LaserJet 200 colorMFP M276n     | No                        | Yes                       |
 | HP LaserJet MFP M130fw             | No                        | Yes                       |
 | HP LaserJet MFP M227sdn            | Yes                       |                           |
 | HP LaserJet MFP M426dw             | Yes                       |                           |
